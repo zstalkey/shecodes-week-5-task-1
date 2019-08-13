@@ -23,21 +23,20 @@ To help you get started:
 
 ## GTIN-13 check digits are calculated as follows:
 
-Multiply every second digit by 3, and every other digit by 1.
-Add up all the multiplied numbers.
-You can now get the check digit by working out what number would have to be added to the
-sum in order to bring it up to a multiple of 10. If the number is already a multiple of 10, the check digit is 0.
+1. Multiply every second digit by 3, and every other digit by 1.
+2. Add up all the multiplied numbers.
+3. You can now get the check digit by working out what number would have to be added to the sum in order to bring it up to a multiple of 10. If the number is already a multiple of 10, the check digit is 0.
 
 
 ## ISBN-10 check digits are calculated as follows:
 
-Multiply the first digit in the barcode by 10. Add the result to the sum.
-Multiply the second digit in the barcode by 9. Add the result to the sum.
-Multiply the third digit in the barcode by 8. Add the result to the sum.
-....
-Multiply the last number in the barcode by 1. Add the result to the sum.
-Calculate the remainder of the sum when divided by 11.
-The check digit is 11 minus the remainder of the result in step 6 when divided by 11. If the check digit is 10, it is replaced with an ‘X’.
+1. Multiply the first digit in the barcode by 10. Add the result to the sum.
+2. Multiply the second digit in the barcode by 9. Add the result to the sum.
+3. Multiply the third digit in the barcode by 8. Add the result to the sum.
+4. ....
+5. Multiply the last number in the barcode by 1. Add the result to the sum.
+6. Calculate the remainder of the sum when divided by 11.
+7. The check digit is 11 minus the remainder of the result in step 6 when divided by 11. If the check digit is 10, it is replaced with an ‘X’.
 
 
 ## Running your program:
